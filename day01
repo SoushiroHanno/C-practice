@@ -1,1 +1,12 @@
-
+#include<stdio.h>
+int main(void)
+{
+  double x = 0.01;
+  int n = 0;
+  while(n<51){
+    printf("n=%d x=%f\n",n,x);
+    x = 4.0*x*(1-x);
+    n++;
+  }
+  return 0;
+}
